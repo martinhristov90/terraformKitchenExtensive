@@ -4,11 +4,9 @@ driver:
   # The test fixture Terraform configuration is configured to be the Terraform
   # root module
   root_module_directory: test/fixtures/wrapper
+  # Setting variable file to be used.
   variable_files:
   - /Users/martinhristov/Tasks/TerraformLearn/terraformKitchenExtensive/test/fixtures/wrapper/env.tfvars
-
-
-
 
 provisioner:
   name: terraform
