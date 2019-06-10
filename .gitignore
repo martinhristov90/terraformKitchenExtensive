@@ -1,0 +1,6 @@
+*.tfvars
+.terraform*
+terraform*
+.kitchen
+key_pair*
+Gemfile.lock
