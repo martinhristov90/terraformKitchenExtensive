@@ -7,7 +7,7 @@ module "extensive_kitchen_terraform" {
   # The source of the module is the root directory of the Terraform project
   source                   = "../../../"
   subnet_availability_zone = "${var.subnet_availability_zone}"
-  access_key = "${var.access_key}"
-  secret_key = "${var.secret_key}"
-  region = "${var.region}"
+  access_key               = "${var.access_key}"
+  secret_key               = "${var.secret_key}"
+  region                   = "${var.region}"
 }
