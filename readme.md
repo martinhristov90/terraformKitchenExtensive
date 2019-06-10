@@ -9,11 +9,9 @@
 - The information about installing terraform can be found on the HashiCorp website 
 [here](https://learn.hashicorp.com/terraform/getting-started/install.html)
 
-## How to setup KitchenCI and RBENV (MacOS Mojave 10.14.5) :
 
-## Setup KitchenCI:
 
-- For using [KitchenCI](https://kitchen.ci/), ruby environment needs to be set up first.
+## Clone this project
 - In a directory of your choice, clone the github repository :
     ```
     git clone https://github.com/martinhristov90/terraformKitchenExtensive.git
@@ -22,9 +20,11 @@
     ```
     cd terraformKitchenExtensive
     ```
+
+## How to setup KitchenCI and RBENV (MacOS Mojave 10.14.5) :
+
 - Run `brew install ruby`
 - After previous command finish, run `gem install rbenv`, this would give you ability to choose particular version of Ruby. This is a prerequisite.
-- Next, [Bundler](https://bundler.io) needs to be installed, run `gem install bundler`, this would provide the dependencies that KitchenCI needs. It is going to install the Gems defined in the `Gemfile`
 - Run the following two commands, to setup Ruby environment for the local directory.
     ```bash
     echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
@@ -47,6 +47,10 @@
     rbenv local 2.5.3
     ```
 - Previous step is going to create a file named .ruby-version, with the following content `2.5.3`
+
+- Next, [Bundler](https://bundler.io) needs to be installed, run `gem install bundler`, this would provide the dependencies that KitchenCI needs. It is going to install the Gems defined in the `Gemfile`
+
+## Setup KitchenCI:
 - Install the needed Gems for KitchenCI using Bundle with command :
     ```shell
     bundle install
