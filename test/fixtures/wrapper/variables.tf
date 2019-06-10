@@ -1,19 +1,19 @@
 variable "instances_ami" {
-  description = <<EOD
-The Amazon Machine Image (AMI) to use for the AWS EC2 instances of the module
-EOD
-
+  description = "The Amazon Machine Image (AMI) to use for the AWS EC2 instances of the module"
   type = "string"
 }
 
 variable "subnet_availability_zone" {
-  description = <<EOD
-The isolated, regional location in which to place the subnet of the module
-EOD
-
+  description = "The isolated, regional location in which to place the subnet of the module"
   type = "string"
 }
 
-variable "access_key" {}
-variable "secret_key" {}
-variable "region" {}
+variable "access_key" {
+  description = "AWS access key"
+}
+variable "secret_key" {
+  description = "AWS secret key"
+}
+variable "region" {
+  description = "AWS region"
+}
